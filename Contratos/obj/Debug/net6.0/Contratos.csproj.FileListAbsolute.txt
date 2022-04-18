@@ -1,0 +1,15 @@
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\bin\Debug\net6.0\Contratos.deps.json
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\bin\Debug\net6.0\Contratos.dll
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\bin\Debug\net6.0\Contratos.pdb
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\bin\Debug\net6.0\Entidade.dll
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\bin\Debug\net6.0\Entidade.pdb
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\obj\Debug\net6.0\Contratos.csproj.AssemblyReference.cache
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\obj\Debug\net6.0\Contratos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\obj\Debug\net6.0\Contratos.AssemblyInfoInputs.cache
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\obj\Debug\net6.0\Contratos.AssemblyInfo.cs
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\obj\Debug\net6.0\Contratos.csproj.CoreCompileInputs.cache
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\obj\Debug\net6.0\Contratos.csproj.CopyComplete
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\obj\Debug\net6.0\Contratos.dll
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\obj\Debug\net6.0\refint\Contratos.dll
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\obj\Debug\net6.0\Contratos.pdb
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Contratos\obj\Debug\net6.0\ref\Contratos.dll

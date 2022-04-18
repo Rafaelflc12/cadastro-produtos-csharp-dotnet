@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "DIaAh1TIbMYvrH8Vd2jFdHCmqgoyYXTb3W5C8rU0BT2uU8q9xilMDavQ1NZr2SUAGF5KfiWEJ7jOcTNUMnazug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RAFAEL COLONESE\\source\\repos\\CadastroProdutos\\Repositorio\\Repositorio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RAFAEL COLONESE\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\RAFAEL COLONESE\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
+    "C:\\Users\\RAFAEL COLONESE\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\RAFAEL COLONESE\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\RAFAEL COLONESE\\.nuget\\packages\\npgsql\\6.0.3\\npgsql.6.0.3.nupkg.sha512",
+    "C:\\Users\\RAFAEL COLONESE\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

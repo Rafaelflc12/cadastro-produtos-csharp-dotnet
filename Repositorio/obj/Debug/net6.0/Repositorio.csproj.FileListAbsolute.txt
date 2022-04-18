@@ -1,0 +1,17 @@
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\bin\Debug\net6.0\Repositorio.deps.json
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\bin\Debug\net6.0\Repositorio.dll
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\bin\Debug\net6.0\Repositorio.pdb
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\bin\Debug\net6.0\Contratos.dll
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\bin\Debug\net6.0\Entidade.dll
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\bin\Debug\net6.0\Contratos.pdb
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\bin\Debug\net6.0\Entidade.pdb
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\obj\Debug\net6.0\Repositorio.csproj.AssemblyReference.cache
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\obj\Debug\net6.0\Repositorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\obj\Debug\net6.0\Repositorio.AssemblyInfoInputs.cache
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\obj\Debug\net6.0\Repositorio.AssemblyInfo.cs
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\obj\Debug\net6.0\Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\obj\Debug\net6.0\Repositorio.csproj.CopyComplete
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\obj\Debug\net6.0\Repositorio.dll
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\obj\Debug\net6.0\refint\Repositorio.dll
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\obj\Debug\net6.0\Repositorio.pdb
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\Repositorio\obj\Debug\net6.0\ref\Repositorio.dll
