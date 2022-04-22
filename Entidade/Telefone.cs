@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidade
 {
-    public class Telefone
+    public class Telefone : Base
     {
-        public int id { get; set; }
+        
         public string  ddd { get; set; }
         public string numero { get; set; }
         public string referencia { get; set; }

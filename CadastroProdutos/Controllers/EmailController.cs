@@ -13,7 +13,7 @@ namespace CadastroProdutos.Controllers
         {
             _repositorioWrapper = repositorioWrapper;
         }
-        private IRepositorioWrapper _repositorioWrapper;
+        public IRepositorioWrapper _repositorioWrapper;
 
         [HttpGet]
         public async Task<IActionResult> ListarTodos()
@@ -47,7 +47,7 @@ namespace CadastroProdutos.Controllers
         }
 
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<IActionResult> Alterar([FromBody] Email email)
         {
             try
@@ -62,7 +62,7 @@ namespace CadastroProdutos.Controllers
 
             }
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Excluir(int id)
         {
             try

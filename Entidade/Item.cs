@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidade
 {
-    public class Item
+    public class Item : Base
     {
-        public int id { get; set; }
+        
         public float quantidade { get; set; }
         public float valor { get; set; }
         public int idPedido { get; set; }

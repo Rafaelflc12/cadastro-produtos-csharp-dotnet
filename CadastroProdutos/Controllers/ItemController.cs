@@ -13,7 +13,7 @@ namespace CadastroProdutos.Controllers
         {
             _repositorioWrapper = repositorioWrapper;
         }
-        private IRepositorioWrapper _repositorioWrapper;
+        public IRepositorioWrapper _repositorioWrapper;
 
         [HttpGet]
         public async Task<IActionResult> ListarTodos()

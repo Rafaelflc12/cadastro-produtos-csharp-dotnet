@@ -23,7 +23,7 @@ namespace Repositorio
         {
             get
             {
-                return string.Format("update {0} set quantidade=@quantidade, valor=@valor where id={1}id", nomeTabela);
+                return string.Format("update {0} set quantidade=@quantidade, valor=@valor where id=@id", nomeTabela);
             }
         }
     }

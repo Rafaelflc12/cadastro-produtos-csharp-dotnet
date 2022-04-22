@@ -10,17 +10,17 @@ namespace Repositorio
 {
     public class RepositorioWrapper : IRepositorioWrapper
     {
-        private  Entidade.configuracao.MeuBanco _myDB;
+        public  Entidade.configuracao.MeuBanco _myDB;
 
 
-        private IConfiguration _configuration;
+        public IConfiguration _configuration;
         public RepositorioWrapper(IConfiguration configuration, Entidade.configuracao.MeuBanco myDB)
         {
             _configuration = configuration;
             this._myDB = myDB;
         }
 
-        private IFornecedorRepositorio _Fornecedor;
+        public IFornecedorRepositorio _Fornecedor;
         public IFornecedorRepositorio Fornecedor
         {
             get
@@ -35,7 +35,7 @@ namespace Repositorio
         }
 
 
-        private IEmailRepositorio _Email;
+        public IEmailRepositorio _Email;
         public IEmailRepositorio Email
         {
             get
@@ -49,7 +49,7 @@ namespace Repositorio
             }
         }
 
-        private ITelefoneRepositorio _Telefone;
+        public ITelefoneRepositorio _Telefone;
         public ITelefoneRepositorio Telefone
         {
             get
@@ -64,7 +64,7 @@ namespace Repositorio
         }
 
 
-        private IProdutoRepositorio _Produto;
+        public IProdutoRepositorio _Produto;
         public IProdutoRepositorio Produto
         {
             get
@@ -79,7 +79,7 @@ namespace Repositorio
         }
 
 
-        private IItemRepositorio _Item;
+        public IItemRepositorio _Item;
         public IItemRepositorio Item
         {
             get
@@ -93,7 +93,7 @@ namespace Repositorio
             }
         }
 
-        private IPedidoRepositorio _Pedido;
+        public IPedidoRepositorio _Pedido;
         public IPedidoRepositorio Pedido
         {
             get
@@ -108,7 +108,7 @@ namespace Repositorio
         }
 
 
-        private ITransportadoraRepositorio _Transportadora;
+        public ITransportadoraRepositorio _Transportadora;
         public ITransportadoraRepositorio Transportadora
         {
             get

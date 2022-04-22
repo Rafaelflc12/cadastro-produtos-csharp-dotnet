@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidade
 {
-    public class Email
+    public class Email : Base
     {
-        public  int id { get; set; }
+        
         public string email { get; set; }
         public string referencia { get; set; }
         

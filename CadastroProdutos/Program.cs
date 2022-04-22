@@ -14,12 +14,6 @@ builder.Services.AddSwaggerGen();
 
 
 
-
-
-
-
-
-
 builder.Services.AddSingleton<IConfiguration>(provider => builder.Configuration);
 builder.Services.AddSingleton<Entidade.configuracao.MeuBanco>();
 
@@ -36,6 +30,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors(options => 
+{
+    options.WithOrigins("http://localhost:3000");
+    options.AllowAnyMethod();
+    options.AllowAnyHeader();
+});
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

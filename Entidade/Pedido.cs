@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidade
 {
-    public class Pedido
+    public class Pedido : Base
     {
-        public int id { get; set; }
+        
         public DateTime dataHora { get; set; }
         public string notaFiscal { get; set; }
         public float valorFrete { get; set; }
