@@ -22,7 +22,7 @@ namespace Repositorio
         }
         protected infConnection infConnection { get; set; }
 
-        private DbConnection GetConnection()
+        protected DbConnection GetConnection()
         {
             return new Npgsql.NpgsqlConnection(infConnection.conexao);
 

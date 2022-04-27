@@ -1,4 +1,6 @@
-﻿using Contratos;
+﻿using System.Data.Common;
+using Contratos;
+using Dapper;
 using Entidade;
 using Entidade.configuracao;
 
@@ -24,6 +26,58 @@ namespace Repositorio
             get
             {
                 return string.Format("update {0} set ddd=@ddd, numero=@numero, referencia=@referenci where id=@id", nomeTabela);
+            }
+        }
+
+        public async Task alterarTelefones(List<Telefone> telefone)
+        {
+
+            try
+            {
+                string sql = "update telefone set ddd=@ddd, numero=@numero, referencia=@referencia where fornecedor_id=@fornecedor_id";
+                using (DbConnection conexao = GetConnection())
+                {
+                    await conexao.ExecuteAsync(sql, telefone);
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public async Task excluirTelefones(int fornecedor_id)
+        {
+            try
+            {
+                var sql = "delete from telefone where fornecedor_id = @fornecedor_id";
+                using (DbConnection conexao = GetConnection())
+                {
+                    await conexao.ExecuteAsync(sql,
+                        new { fornecedor_id = fornecedor_id });
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public async Task incluirTelefones(List<Telefone> telefones)
+        {
+            try
+            {
+                foreach (var telefone in telefones)
+                {
+                    await Criar(telefone);
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
     }

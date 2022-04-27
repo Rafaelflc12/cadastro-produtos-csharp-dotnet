@@ -9,6 +9,6 @@ namespace Contratos
 {
     public interface IFornecedorRepositorio : IRepositorioBase<Fornecedor>
     {
-
+       
     }
 }

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "VS+4jMcVmo/96fKSvHsyxa2Wo79cG8pF8Zn5kgiDuaEjHs1CeLue44veHbNbbe11o/1ZkILK/iYzIqANUWndgA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RAFAEL COLONESE\\source\\repos\\CadastroProdutos\\Services\\Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RAFAEL COLONESE\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
+    "C:\\Users\\RAFAEL COLONESE\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\RAFAEL COLONESE\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\RAFAEL COLONESE\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

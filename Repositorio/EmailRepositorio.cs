@@ -1,4 +1,6 @@
-﻿using Contratos;
+﻿using System.Data.Common;
+using Contratos;
+using Dapper;
 using Entidade;
 using Entidade.configuracao;
 
@@ -24,6 +26,56 @@ namespace Repositorio
             get
             {
                 return string.Format("update {0} set email=@email, referencia=@referencia where id=@id", nomeTabela);
+            }
+        }
+
+        public async Task incluirEmail(List<Email> emails)
+        {
+            try
+            {
+                foreach (var email in emails)
+                {
+                    await Criar(email);
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public async Task excluirEmail(int fornecedor_id)
+        {
+            try
+            {
+                var sql = "delete from email where fornecedor_id = @fornecedor_id";
+                using (DbConnection conexao = GetConnection())
+                {
+                    await conexao.ExecuteAsync(sql,
+                        new { fornecedor_id = fornecedor_id });
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public async Task alterarEmails(List<Email> emails)
+        {
+            try
+            {
+                string sql = "update email set email=@email, referencia=@referencia where fornecedor_id=@fornecedor_id";
+                using (DbConnection conexao = GetConnection())
+                {
+                    await conexao.ExecuteAsync(sql, emails);
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
     }

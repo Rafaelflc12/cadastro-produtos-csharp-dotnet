@@ -16,6 +16,7 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.3",
           "Repositorio": "1.0.0",
+          "Services": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -2329,6 +2330,15 @@
         "runtime": {
           "Repositorio.dll": {}
         }
+      },
+      "Services/1.0.0": {
+        "dependencies": {
+          "Contratos": "1.0.0",
+          "Entidade": "1.0.0"
+        },
+        "runtime": {
+          "Services.dll": {}
+        }
       }
     }
   },
@@ -3616,6 +3626,11 @@
       "sha512": ""
     },
     "Repositorio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

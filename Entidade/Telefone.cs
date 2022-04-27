@@ -12,7 +12,7 @@ namespace Entidade
         public string  ddd { get; set; }
         public string numero { get; set; }
         public string referencia { get; set; }
-        public int idFornecedor { get; set; }
+        public int fornecedor_id { get; set; }
 
     }
 }

@@ -10,5 +10,8 @@
         public string bairro { get; set; }
         public int numero { get; set; }
 
+        public List <Email> Email { get; set; }
+        public List<Telefone> Telefone { get; set; }
+
     }
 }

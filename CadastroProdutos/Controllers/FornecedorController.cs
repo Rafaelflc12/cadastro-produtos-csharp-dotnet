@@ -9,18 +9,18 @@ namespace CadastroProdutos.Controllers
     [ApiController]
     public class FornecedorController : ControllerBase
     {
-        public FornecedorController(IRepositorioWrapper repositorioWrapper)
+        public FornecedorController(IFornecedorRepositorio fornecedorRepositorio)
         {
-            _repositorioWrapper = repositorioWrapper;
+            _fornecedorRepositorio = fornecedorRepositorio;
         }
-        public IRepositorioWrapper _repositorioWrapper;
+        public IFornecedorRepositorio _fornecedorRepositorio;
 
         [HttpGet]
         public async Task<IActionResult> ListarTodos()
         {
             try
             {
-                var fornecedores = await _repositorioWrapper.Fornecedor.ListarTodos();
+                var fornecedores = await _fornecedorRepositorio.ListarTodos();
                 return Ok(fornecedores);
             }
             catch (Exception ex)
@@ -35,7 +35,7 @@ namespace CadastroProdutos.Controllers
         {
             try
             {
-                await _repositorioWrapper.Fornecedor.Criar(fornecedor);
+                await _fornecedorRepositorio.Criar(fornecedor);
                 return Ok();
 
             }
@@ -52,7 +52,7 @@ namespace CadastroProdutos.Controllers
         {
             try
             {
-                await _repositorioWrapper.Fornecedor.Alterar(fornecedor);
+                await _fornecedorRepositorio.Alterar(fornecedor);
                 return Ok();
 
             }
@@ -67,10 +67,10 @@ namespace CadastroProdutos.Controllers
         {
             try
             {
-                var fornecedor =  await _repositorioWrapper.Fornecedor.ObterPorId(id);
+                var fornecedor =  await _fornecedorRepositorio.ObterPorId(id);
                 if (fornecedor == null)
                     return NotFound();
-                await _repositorioWrapper.Fornecedor.Excluir(fornecedor);
+                await _fornecedorRepositorio.Excluir(fornecedor);
                 
                 return Ok();
 
@@ -87,7 +87,7 @@ namespace CadastroProdutos.Controllers
         {
             try
             {
-                var fornecedores = await _repositorioWrapper.Fornecedor.ObterPorId(id);
+                var fornecedores = await _fornecedorRepositorio.ObterPorId(id);
                 return Ok(fornecedores);
             }
             catch (Exception ex)

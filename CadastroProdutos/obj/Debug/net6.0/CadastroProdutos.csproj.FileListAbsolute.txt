@@ -271,3 +271,5 @@ C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\CadastroProdutos\obj\Debu
 C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\CadastroProdutos\obj\Debug\net6.0\CadastroProdutos.pdb
 C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\CadastroProdutos\obj\Debug\net6.0\CadastroProdutos.genruntimeconfig.cache
 C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\CadastroProdutos\obj\Debug\net6.0\ref\CadastroProdutos.dll
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\CadastroProdutos\bin\Debug\net6.0\Services.dll
+C:\Users\RAFAEL COLONESE\source\repos\CadastroProdutos\CadastroProdutos\bin\Debug\net6.0\Services.pdb

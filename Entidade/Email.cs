@@ -12,6 +12,6 @@ namespace Entidade
         public string email { get; set; }
         public string referencia { get; set; }
         
-
+        public int fornecedor_id { get; set; }
     }
 }

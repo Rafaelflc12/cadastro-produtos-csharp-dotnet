@@ -2,6 +2,7 @@
 using Contratos;
 using Microsoft.EntityFrameworkCore;
 using Repositorio;
+using Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,7 @@ builder.Services.AddSingleton<IConfiguration>(provider => builder.Configuration)
 builder.Services.AddSingleton<Entidade.configuracao.MeuBanco>();
 
 builder.Services.AddScoped<IRepositorioWrapper, RepositorioWrapper>();
+builder.Services.AddScoped<IFornecedorRepositorio, ServiceFornecedor>();
 
 
 var app = builder.Build();
