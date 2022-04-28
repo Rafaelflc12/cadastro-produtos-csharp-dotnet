@@ -8,7 +8,7 @@ namespace Repositorio
 {
     public class EmailRepositorio : RepositorioBase<Email>, IEmailRepositorio
     {
-        public EmailRepositorio(MeuBanco meuBanco) : base(meuBanco) 
+        public                                               EmailRepositorio(MeuBanco meuBanco) : base(meuBanco) 
         {
 
         }

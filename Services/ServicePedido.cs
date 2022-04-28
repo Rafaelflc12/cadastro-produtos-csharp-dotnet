@@ -61,6 +61,7 @@ await _repositorioWrapper.Pedido.Alterar(pedido);
             }
         }
 
+
         
 
        
@@ -83,11 +84,12 @@ await _repositorioWrapper.Pedido.Alterar(pedido);
         
      
 
-      async Task<List<Pedido>> IRepositorioBase<Pedido>.ListarTodos()
+      public async Task<List<Pedido>> ListarTodos()
         {
             try
             {
             var allgeted=   await  _repositorioWrapper.Pedido.ListarTodos();
+
                 return allgeted;
             }
             catch (Exception)

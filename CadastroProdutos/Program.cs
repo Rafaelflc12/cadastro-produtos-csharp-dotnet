@@ -20,7 +20,8 @@ builder.Services.AddSingleton<Entidade.configuracao.MeuBanco>();
 
 builder.Services.AddScoped<IRepositorioWrapper, RepositorioWrapper>();
 builder.Services.AddScoped<IFornecedorRepositorio, ServiceFornecedor>();
-
+builder.Services.AddScoped<IProdutoRepositorio, ServiceProduto>();
+builder.Services.AddScoped<IPedidoRepositorio, ServicePedido>();
 
 var app = builder.Build();
 

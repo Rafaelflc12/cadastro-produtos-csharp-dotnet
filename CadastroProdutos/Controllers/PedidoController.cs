@@ -9,18 +9,18 @@ namespace CadastroProdutos.Controllers
     [ApiController]
     public class PedidoController : ControllerBase
     {
-        public PedidoController(IRepositorioWrapper repositorioWrapper)
+        public PedidoController(IPedidoRepositorio pedidoRepositorio)
         {
-            _repositorioWrapper = repositorioWrapper;
+            _pedidoRepositorio = pedidoRepositorio;
         }
-        public IRepositorioWrapper _repositorioWrapper;
+        public IPedidoRepositorio _pedidoRepositorio;
 
         [HttpGet]
         public async Task<IActionResult> ListarTodos()
         {
             try
             {
-                var pedidos = await _repositorioWrapper.Pedido.ListarTodos();
+                var pedidos = await _pedidoRepositorio.ListarTodos();
                 return Ok(pedidos);
             }
             catch (Exception ex)
@@ -35,7 +35,7 @@ namespace CadastroProdutos.Controllers
         {
             try
             {
-                await _repositorioWrapper.Pedido.Criar(pedido);
+                await _pedidoRepositorio.Criar(pedido);
                 return Ok();
 
             }
@@ -52,7 +52,7 @@ namespace CadastroProdutos.Controllers
         {
             try
             {
-                await _repositorioWrapper.Pedido.Alterar(pedido);
+                await _pedidoRepositorio.Alterar(pedido);
                 return Ok();
 
             }
@@ -67,10 +67,10 @@ namespace CadastroProdutos.Controllers
         {
             try
             {
-                var pedido = await _repositorioWrapper.Pedido.ObterPorId(id);
+                var pedido = await _pedidoRepositorio.ObterPorId(id);
                 if (pedido == null)
                     return NotFound();
-                await _repositorioWrapper.Pedido.Excluir(pedido);
+                await _pedidoRepositorio.Excluir(pedido);
 
                 return Ok();
 
@@ -87,7 +87,7 @@ namespace CadastroProdutos.Controllers
         {
             try
             {
-                var pedidos = await _repositorioWrapper.Pedido.ObterPorId(id);
+                var pedidos = await _pedidoRepositorio.ObterPorId(id);
                 return Ok(pedidos);
             }
             catch (Exception ex)

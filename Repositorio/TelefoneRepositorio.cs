@@ -25,7 +25,7 @@ namespace Repositorio
         {
             get
             {
-                return string.Format("update {0} set ddd=@ddd, numero=@numero, referencia=@referenci where id=@id", nomeTabela);
+                return string.Format("update {0} set ddd=@ddd, numero=@numero, referencia=@referencia where id=@id", nomeTabela);
             }
         }
 

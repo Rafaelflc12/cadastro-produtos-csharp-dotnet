@@ -3205,7 +3205,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Contratos": "1.0.0",
-          "Entidade": "1.0.0"
+          "Entidade": "1.0.0",
+          "Repositorio": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Services.dll": {}

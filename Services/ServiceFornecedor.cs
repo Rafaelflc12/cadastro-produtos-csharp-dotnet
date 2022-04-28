@@ -1,4 +1,6 @@
-﻿using Contratos;
+﻿using System.Data.Common;
+using Contratos;
+using Dapper;
 using Entidade;
 
 namespace Services
@@ -61,10 +63,6 @@ await _repositorioWrapper.Fornecedor.Alterar(fornecedor);
             }
         }
 
-        
-
-       
-        
 
         public async Task<Fornecedor> ObterPorId(int Id)
         {
@@ -83,12 +81,16 @@ await _repositorioWrapper.Fornecedor.Alterar(fornecedor);
         
      
 
-      async Task<List<Fornecedor>> IRepositorioBase<Fornecedor>.ListarTodos()
+      public async Task<List<Fornecedor>> ListarTodos()
         {
+            
             try
             {
-            var allgeted=   await  _repositorioWrapper.Fornecedor.ListarTodos();
-                return allgeted;
+                
+               var forn=  await _repositorioWrapper.Fornecedor.ListarTodos();
+                return forn;
+                
+
             }
             catch (Exception)
             {
@@ -97,5 +99,7 @@ await _repositorioWrapper.Fornecedor.Alterar(fornecedor);
             }
   
         }
+
+        
     }
 }
