@@ -78,5 +78,22 @@ namespace Repositorio
                 throw;
             }
         }
+
+        public async Task obterPorIdEmails(int id)
+        {
+            try
+            {
+                string sql = "select * from email where id=@fornecedor_id";
+                using (DbConnection conexao = GetConnection())
+                {
+                    await conexao.ExecuteAsync(sql, id);
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

@@ -12,5 +12,6 @@ namespace Contratos
         Task incluirTelefones(List<Telefone> telefones);
         Task excluirTelefones(int fornecedor_id);
         Task alterarTelefones(List<Telefone> telefone);
+        Task obterPorIdTelefones(int id);
     }
 }

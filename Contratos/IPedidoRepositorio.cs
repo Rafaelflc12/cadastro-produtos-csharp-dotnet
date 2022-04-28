@@ -9,5 +9,6 @@ namespace Contratos
 {
     public interface IPedidoRepositorio : IRepositorioBase<Pedido>
     {
+       
     }
 }

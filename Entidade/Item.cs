@@ -11,8 +11,8 @@ namespace Entidade
         
         public float quantidade { get; set; }
         public float valor { get; set; }
-        public int idPedido { get; set; }
-        public int idProduto { get; set; }
+        public int pedido_id{ get; set; }
+        public int produto_id { get; set; }
 
     }
 }

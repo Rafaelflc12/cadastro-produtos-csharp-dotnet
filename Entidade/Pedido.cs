@@ -14,7 +14,9 @@ namespace Entidade
         public float valorFrete { get; set; }
         public float desconto { get; set; }
         public float valorTotal { get; set; }
-        public int idTransportadora { get; set; }
+        public int transportador_id { get; set; }
+
+        public List<Item> Item { get; set; }
 
     }
 }

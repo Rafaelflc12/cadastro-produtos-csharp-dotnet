@@ -66,17 +66,21 @@ await _repositorioWrapper.Fornecedor.Alterar(fornecedor);
        
         
 
-        public Task<Fornecedor> ObterPorId(int Id)
+        public async Task<Fornecedor> ObterPorId(int Id)
         {
-            throw new NotImplementedException();
+            try
+            {
+              var getID=  await _repositorioWrapper.Fornecedor.ObterPorId(Id);
+                return getID;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         
-
-       
-
-      
-
      
 
       async Task<List<Fornecedor>> IRepositorioBase<Fornecedor>.ListarTodos()

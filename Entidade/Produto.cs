@@ -11,6 +11,7 @@ namespace Entidade
         
         public string nome { get; set; }
         public string descricao { get; set; }
+        public int fornecedor_id { get; set; }
 
     }
 }

@@ -12,6 +12,7 @@ namespace Contratos
         Task incluirEmail(List<Email> emails);
         Task excluirEmail(int fornecedor_id);
         Task alterarEmails(List<Email> emails);
+        Task obterPorIdEmails(int id);
 
     }
 }
