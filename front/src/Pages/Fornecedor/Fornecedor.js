@@ -96,7 +96,9 @@ function Fornecedor() {
             fornecedor.cidade = resposta.cidade;
             fornecedor.endereco = resposta.endereco;
             fornecedor.bairro = resposta.bairro;
-            fornecedor.numero = resposta.numero;
+            fornecedor.numero = resposta.numero.parseint();
+            fornecedor.email = resposta.email;
+            fornecedor.telefone = resposta.telefone;
           } 
           return fornecedor;
         });
@@ -163,7 +165,7 @@ const pedidoDelete=async()=>{
             <th>Endereço</th>
             <th>Bairro</th>
             <th>Número</th>
-            <th>telefone</th>
+            <th>Telefone</th>
             <th>Email</th>
 
           </tr>
@@ -179,8 +181,8 @@ const pedidoDelete=async()=>{
                 <td>{fornecedor.endereco}</td>
                 <td>{fornecedor.bairro}</td>
                 <td>{fornecedor.numero}</td>
-                <td>{fornecedor.telefone}</td>
-                <td>{fornecedor.email}</td>
+                <td>{fornecedor.email.map((email)=>(<div>[{email.email}]</div>))}</td>
+                <td>{fornecedor.telefone.map((telefone)=>(<div>[{telefone.numero}] </div>))}</td>
 
                 <td>
                   <button className='btn btn-primary' onClick={() => selecionar(fornecedor, "Editar")}> Editar</button>{"  "}
@@ -205,17 +207,35 @@ const pedidoDelete=async()=>{
             <input type="text" className="form-control" name='descricao' onChange={handleChange}
               value={selecionado && selecionado.descricao} />
             <br></br>
+            <label>Cidade:</label>
+            <br></br>
             <input type="text" className="form-control" name='cidade' onChange={handleChange}
               value={selecionado && selecionado.cidade} />
+            <br></br>
+            <label>Endereço:</label>
             <br></br>
             <input type="text" className="form-control" name='endereco' onChange={handleChange}
               value={selecionado && selecionado.endereco} />
             <br></br>
+            <label>Bairro:</label>
+            <br></br>
             <input type="text" className="form-control" name='bairro' onChange={handleChange}
               value={selecionado && selecionado.bairro} />
             <br></br>
+            <label>Número:</label>
+            <br></br>
             <input type="text" className="form-control" name='numero' onChange={handleChange}
               value={selecionado && selecionado.numero} />
+            <br></br>
+            <label>Email:</label>
+            <br></br>
+            <input type="text" className="form-control" name='email' onChange={handleChange}
+              value={selecionado && selecionado.email.email} />
+            <br></br>
+            <label>Telefone:</label>
+            <br></br>
+            <input type="text" className="form-control" name='telefone' onChange={handleChange}
+              value={selecionado && selecionado.telefone.numero} />
             <br></br>
 
           </div>
@@ -240,17 +260,35 @@ const pedidoDelete=async()=>{
             <br></br>
             <input type="text" className="form-control" name='descricao' onChange={handleChange} value={selecionado && selecionado.descricao} />
             <br></br>
+            <label>Cidade:</label>
+            <br></br>
             <input type="text" className="form-control" name='cidade' onChange={handleChange}
               value={selecionado && selecionado.cidade} />
+            <br></br>
+            <label>Endereço:</label>
             <br></br>
             <input type="text" className="form-control" name='endereco' onChange={handleChange}
               value={selecionado && selecionado.endereco} />
             <br></br>
+            <label>Bairro:</label>
+            <br></br>
             <input type="text" className="form-control" name='bairro' onChange={handleChange}
               value={selecionado && selecionado.bairro} />
             <br></br>
+            <label>Número:</label>
+            <br></br>
             <input type="text" className="form-control" name='numero' onChange={handleChange}
               value={selecionado && selecionado.numero} />
+            <br></br>
+            <label>E-Mail:</label>
+            <br></br>
+            <input type="text" className="form-control" name='email' onChange={handleChange}
+              value={selecionado && selecionado.email.email} />
+            <br></br>
+            <label>Telefone:</label>
+            <br></br>
+            <input type="text" className="form-control" name='telefone' onChange={handleChange}
+              value={selecionado && selecionado.telefone.numero} />
             <br></br>
 
           </div>
